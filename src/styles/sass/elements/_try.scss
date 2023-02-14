@@ -1,0 +1,59 @@
+.jsonPretty {
+    height: 500px;
+    max-height: 500px;
+    overflow: overlay;
+    font-size: 1em;
+    color: #99daff;
+    background: #000000;
+    border-radius: 15px;
+    padding: 12px;
+    margin-top: 20px;
+    @media(min-width: 991px) {
+        max-width: 600px;
+    }
+    @media(max-width: 767px) {
+        height: 300px;
+    }
+    .__json-key__ {
+        color: #b8f5d1
+    }
+    .__json-string__ {
+        color: #fff
+    }
+}
+
+.try_api {
+    margin-bottom: 20px;
+    .container {
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.try_input {
+    .input-wrap {
+        max-width: 500px;
+        padding: 20px;
+        width: 100%;
+        background: #ffffff;
+        margin: 0 auto;
+        box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        @media(min-width: 991px) {
+            margin-left: auto;
+        }
+        .url-sample,
+        .req-url {
+            border: 0;
+            background: #e9ecef59;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .btn {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+footer {
+    background: rgb(217, 224, 221);
+    position: relative;
+    .footer-logo {
+        font-family: $clash-display;
+    }
+    .desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        .menu {
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                gap: 35px;
+                li {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 2px;
+                        background: $dark-blue;
+                        left: -25px;
+                        top: 45%;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    position: relative;
+                    a {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-size: 15px;
+                        font-family: $inter;
+                        font-weight: 500;
+                    }
+                    &:hover {
+                        &:before {
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .shape_img {
+        height: 100%;
+        .one {
+            left: 100px;
+            bottom: 200px;
+        }
+        .two {
+            bottom: 0;
+            right: 230px;
+        }
+        .three {
+            right: 0;
+            top: 155px;
+        }
+        img {
+            position: absolute;
+        }
+    }
+}

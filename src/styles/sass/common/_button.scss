@@ -1,0 +1,51 @@
+// Base styles
+// --------------------------------------------------
+.bg_btn {
+    color: #131313;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    background: $white;
+    border: 2px solid #131313;
+    box-shadow: 4px 4px 0px #131313;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    transition: .3s;
+    display: inline-block;
+    i {
+        transform: rotate(-45deg);
+        margin-left: 5px;
+        transition: 0.3s;
+    }
+    &:hover {
+        box-shadow: none;
+        i {
+            transform: none;
+        }
+    }
+}
+
+.bg_btn_color {
+    font-family: $inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    background: #FC7944;
+    border: 2px solid #131313;
+    box-shadow: 4px 4px 0px #131313;
+    padding: 20px 44px;
+    text-transform: uppercase;
+    transition: .3s;
+    display: inline-block;
+    &:hover {
+        color: $white;
+        box-shadow: none;
+    }
+}
+
+.popup-content {
+    .bg_btn_color,
+    .bg_btn {
+        padding: 10px 44px;
+    }
+}

@@ -1,0 +1,115 @@
+.loading {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    background: #ECF0F1;
+    height: 100vh;
+}
+
+.loading.biz-list {
+    top: 0;
+}
+
+.biz-list {
+    .load {
+        top: 10%;
+    }
+}
+
+.load {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+}
+
+.load hr {
+    border: 0;
+    margin: 0;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    border-radius: 50%;
+    animation: spin 2s ease infinite;
+    opacity: 1;
+}
+
+.load :first-child {
+    background: #19a68c;
+    animation-delay: -1.5s;
+    opacity: 1;
+}
+
+.load :nth-child(2) {
+    background: #f63d3a;
+    animation-delay: -1s;
+    opacity: 1;
+}
+
+.load :nth-child(3) {
+    background: #fda543;
+    animation-delay: -0.5s;
+    opacity: 1;
+}
+
+.load :last-child {
+    background: #193b48;
+    opacity: 1;
+}
+
+@keyframes spin {
+    0%,
+    100% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(160%);
+    }
+    50% {
+        transform: translate(160%, 160%);
+    }
+    75% {
+        transform: translate(0, 160%);
+    }
+}
+
+.shim {
+    height: 300px;
+    width: 100%;
+    margin: 10px;
+    object-fit: cover;
+    background: #f6f7f8;
+    background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+    background-repeat: no-repeat;
+    background-size: 800px 300px;
+    display: inline-block;
+    position: relative;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeholderShimmer;
+    animation-timing-function: linear;
+    @media(max-width: 576px) {
+        height: 200px;
+        width: 100%;
+    }
+    @media(min-width: 576px) {
+        height: 200px;
+        width: 246px;
+    }
+    @media(min-width: 768px) {
+        height: 300px;
+        width: 350px;
+    }
+}
+
+@keyframes placeholderShimmer {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}

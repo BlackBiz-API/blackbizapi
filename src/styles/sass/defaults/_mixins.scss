@@ -1,0 +1,48 @@
+@mixin menu-link-decor {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: $dark-blue;
+        left: -25px;
+        top: 45%;
+        transition: all 0.3s ease-in-out;
+    }
+    position: relative;
+    a {
+        text-decoration: none;
+    }
+    &:hover {
+        &:before {
+            width: 20px;
+        }
+    }
+}
+
+@mixin mobile-menu {
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        li {
+            padding: 8px 0;
+            position: relative;
+            &:not(:last-of-type) {
+                border-bottom: 2px solid #1313130f;
+            }
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 15px;
+                font-family: $inter;
+                font-weight: 600;
+            }
+            &:hover {
+                &:before {
+                    width: 20px;
+                }
+            }
+        }
+    }
+}

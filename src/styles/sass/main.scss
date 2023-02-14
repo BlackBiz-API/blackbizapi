@@ -1,0 +1,40 @@
+/**************************************
+    Default Styles
+***************************************/
+
+@import './defaults/variables';
+@import './defaults/mixins';
+@import './defaults/typography';
+
+/**************************************
+    Common
+***************************************/
+
+@import './common/button';
+@import './common/loader';
+
+/**************************************
+    Elements
+***************************************/
+
+@import './elements/hero';
+@import './elements/header';
+@import './elements/footer';
+@import './elements/preloader';
+@import './elements/try';
+@import './elements/features';
+
+/**************************************
+    Templates
+***************************************/
+
+@import './templates/404';
+@import './templates/login';
+@import './templates/about';
+@import './templates/contribute';
+
+/**************************************
+    Templates
+***************************************/
+
+@import './defaults/responsive-2';

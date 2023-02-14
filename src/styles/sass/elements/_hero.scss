@@ -1,0 +1,45 @@
+// Hero
+.hero_tw {
+    padding-top: 90px;
+    padding-bottom: 110px;
+    position: relative;
+    background: rgb(245, 219, 110);
+    ;
+    .content {
+        text-align: center;
+        .section_title {
+            h1 {
+                font-family: $clash-display;
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 60px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 38px;
+                padding-top: 20px;
+            }
+        }
+        .bg_btn {
+            margin-top: 30px;
+        }
+    }
+    .shape_img {
+        .one {
+            left: 100px;
+            bottom: 300px;
+        }
+        .two {
+            bottom: 0;
+            right: 230px;
+        }
+        .three {
+            right: 0;
+            top: 155px;
+        }
+        img {
+            position: absolute;
+        }
+    }
+}

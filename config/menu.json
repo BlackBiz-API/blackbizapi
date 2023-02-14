@@ -1,0 +1,29 @@
+{
+    "main": [{
+            "name": "About",
+            "url": "/about",
+            "internal": true
+        },
+        {
+            "name": "Contribute",
+            "url": "/contribute",
+            "internal": true
+        },
+        {
+            "name": "Docs",
+            "url": "https://api.blackbizapi.com/docs",
+            "internal": true
+        }
+    ],
+    "footer": [{
+            "name": "Docs",
+            "url": "https://api.blackbizapi.com/docs",
+            "internal": false
+        },
+        {
+            "name": "GitHub",
+            "url": "https://github.com/Uthy/blackownedapi",
+            "internal": false
+        }
+    ]
+}

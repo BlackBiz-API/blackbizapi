@@ -1,0 +1,15 @@
+{
+    "site": {
+        "title": "Black Biz API",
+        "description": "Discover and support black-owned businesses with the Black-Owned Business API. The API provides access to a directory of black-owned businesses and makes it easy for developers to integrate into their projects.",
+        "base_url": "/",
+        "favicon": "favicon.png",
+        "logo": "./assets/images/bbapi-log0.png",
+        "logo_text": "Black Biz API"
+    },
+
+    "params": {
+        "tag_manager_id": "",
+        "copyright": "© 2023 Black Biz API. All rights reserved"
+    }
+}
