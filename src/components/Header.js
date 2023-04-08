@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link'
 import menu from '../../config/menu.json';
 import Logo from './Logo';
