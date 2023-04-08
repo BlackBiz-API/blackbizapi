@@ -1,3 +1,4 @@
+import React from "react";
 import Loader from "@/components/Loader/Loader";
 import Airtable from "@/page-components/Contribute/Airtable";
 import Head from "next/head";

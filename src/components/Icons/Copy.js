@@ -1,3 +1,4 @@
+import React from "react";
 const Copy = (props) => (
   <svg
     width="24px"

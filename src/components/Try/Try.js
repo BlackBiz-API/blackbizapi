@@ -1,3 +1,4 @@
+import React from 'react';
 import JSONPretty from 'react-json-pretty';
 import axios from 'axios';
 import TryForm from './TryForm';
@@ -46,7 +47,7 @@ function Try() {
                 </div>
                 <div className='col-lg-6 col-md-12 col-sm-12'>
                 <div className='jsonPretty'>
-                    <JSONPretty id="json-pretty" data={sample}></JSONPretty>
+                    <JSONPretty id="json-pretty" data={sample} data-testid="json-pretty"></JSONPretty>
                 </div>
                 </div>
             </div>

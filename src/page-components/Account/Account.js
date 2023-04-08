@@ -1,9 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import validate from "@/helpers/validate";
 import Copy from "@/components/Icons/Copy";
 import { writeText } from 'clipboard-polyfill';
-
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
@@ -43,6 +42,7 @@ function Account(props) {
                 password: state.password,
             })
             .then((response) => {
+                console.log(state.username, state.password)
                 setState({
                     ...state,
                     loginButton: "Success! See API Key Below",
@@ -88,13 +88,15 @@ function Account(props) {
                     regStatus: true,
                     apiKey: response.data.apiKey
                 });
+                regFailed(false)
+                loginFailed(false)
             })
             .catch((error) => {
                 setState({
                     ...state,
                     regFailed: true,
                     regInputError: true,
-                    regValidation: error.response.data.error
+                    regValidation: error?.response?.data?.error
                   });
             })
         }};
@@ -163,12 +165,14 @@ function Account(props) {
 
                     { state.showLogin && <form className="form-log form-content" id="login" onSubmit={(e) => e.preventDefault()}>
                         <div className="field-input">
-                            <input type="text" placeholder="Username or Email" name="user" required onChange={(e) => setState({ ...state, username: e.target.value, loginButton: "Submit"})}/>
+                            <input type="email" placeholder="Email" name="user" required onChange={(e) => setState({ ...state, username: e.target.value, loginButton: "Submit"})}/>
                         </div>
                         <div className="field-input">
                             <input type="password" placeholder="Password" name="password" required onChange={(e) => setState({ ...state, password: e.target.value, loginButton: "Submit"})}/>
                         </div>
                         <button 
+                            role="button"
+                            name="submit"
                             onClick={userLogin}
                             className='bg_btn_color'>{state.loginButton}</button>
 

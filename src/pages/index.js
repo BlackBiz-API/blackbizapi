@@ -1,6 +1,7 @@
-import Features from "@/components/Features";
-import Hero from "@/components/Hero";
-import Try from "@/components/Try";
+import React from "react";
+import Features from "@/components/Features/Features";
+import Hero from "@/components/Hero/Hero";
+import Try from "@/components/Try/Try";
 
 export default function Home() {
   return (
